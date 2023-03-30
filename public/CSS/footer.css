@@ -1,0 +1,38 @@
+/*Stylos del footer*/
+footer{
+    background:rgb(76,148,147);
+    padding: 60px 0 30px 0;
+    margin:auto;
+    overflow: hidden;
+    
+}
+
+.contenedor-footer{
+    display: flex;
+    width: fit-content;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.content-foo{
+    text-align: center;
+
+}
+.content-foo h4{
+  color:#ffff;
+  border-bottom: 3px solid #ffffff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+    
+}
+.content-foo p{
+  color: #fff;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px  0 0 0;
+    color: #ffffff;
+}

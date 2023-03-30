@@ -1,0 +1,281 @@
+  /*
+  nuestra paleta de colores::after
+
+  primario: #fffff;
+  secundario:rgba(180,217,222,255);
+  terceario:rgba(115,182,189,255);
+  cuarto:#68acb5;
+  
+  
+  */
+
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+
+}
+.contenedor-informacion{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+}
+.titulo{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center; 
+    margin-bottom: 60px;
+}
+
+
+nav{
+  text-align:right;
+  padding: 30px 50px 0 0;
+  position: absolute;
+  background-color:transparent;
+  z-index: 4;
+  width:100%;
+   
+}
+
+nav> a{
+  color: #ffff;
+  font-weight: 300;
+  text-decoration: none;
+   margin-right: 10px;
+}
+
+
+
+nav> a:hover{
+  
+  text-decoration: underline;
+  
+}
+
+
+
+/*header*/
+
+header{
+    width: 100%;
+    height: 650px;
+    background: #00F260;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 30%, 86%, 0.479), #004e1fee), url(../img/cool-background.svg);  
+    background: linear-gradient(to right, hsla(207, 50%, 47%, 0.295), #0bb950a7), url(../img/cool-background.svg); 
+  background-size: cover;
+  background-attachment: fixed;
+   position: relative;
+    
+}
+
+
+
+header .textos-headers{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center ;
+
+}
+
+.textos-headers h1{
+
+    font-size: 50px;
+    color:#ffff; 
+}
+
+/*modelo maquina escribir*/
+.escribir{
+    white-space: nowrap; 
+    width: 90ch ; 
+    animation: escribiendo  3.5s steps(200) infinite;  
+    overflow: hidden;
+
+}
+.escribir2{
+    white-space: nowrap; 
+    width: 90ch ; 
+    animation: escribiendo  4s steps(400) infinite;  
+    overflow: hidden;
+}
+.escribir3{
+    white-space: nowrap; 
+    width: 90ch ; 
+    animation: escribiendo  4.9s steps(500) infinite;  
+    overflow: hidden;
+}
+
+@keyframes escribiendo {
+    from{
+        width: 0; 
+    }    
+}
+
+
+.textos-headers h2,h3{
+
+    font-size: 30px;
+    font-weight: 300;
+    color:#ffff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.contenedor-nuestras-divisiones{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.contenedor-texto{
+    width: fit-content;
+    height: fit-content;
+}
+.contenedor-nuestras-divisiones.contenedor-texto{
+    width: 48%; 
+}
+.contenedor-texto h3{
+    margin-bottom: 15px;
+    
+}
+.contenedor-texto h3 span{
+    background: #00F260; 
+   color: #ffff;
+   border-radius: 50%;
+   display: inline-block;
+   text-align: center;
+   width: 30px;
+   height: 30px;
+   padding:  2px ;
+   margin-right: 5px;
+   box-shadow: 0 0 6px 0 rgb(0, 0, 0, .5  );
+
+}
+.contenedor-texto p {
+    padding: 0px 0px 30px 15px;;
+    font-weight: 300;
+    text-align: justify;
+  
+}
+
+img.mediana{
+    width: 100px;
+    height: 100px;
+  }
+
+.img-ma{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+/*Texto en el inicio*/
+section{
+
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+#coont2{
+
+background:rgba(180,217,222,255);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.2px);
+-webkit-backdrop-filter: blur(5.2px);
+
+
+
+
+}
+#div3{
+  background-color:rgba(115,182,189,255);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.2px);
+-webkit-backdrop-filter: blur(5.2px);
+
+
+  
+}
+  section .container{
+    margin: 100px;
+  }
+  section h1{
+    font-size: 3rem;
+    margin: 20px;
+  }
+  section h4{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  section .text-container{
+     display: flex;
+  }
+  section .text-container .text-box{
+    margin: 20px;
+    padding: 20px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+  }
+  section .text-container .text-box h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 900px){
+    section h1{
+      font-size: 2rem;
+      text-align: center;
+    }
+    section .text-container{
+      flex-direction: column;
+    }
+  }
+ 
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  
